@@ -1,0 +1,234 @@
+LISTA 1 EXERCICIO ALGORITMOS (ESTRUTURA CONDICIONAL)
+
+1.
+
+programa {
+	funcao inicio() {
+	escreva ("TRABALHANDO FELIZ\n")
+	
+	real numero
+	
+	escreva ("Qual foi o valor do seu salário: \n")
+	leia (numero)
+	
+	se (numero <=2000 )
+	{
+	    escreva ("Você teve um AUMENTO DE 20% :D\n", numero)
+	}
+	senao
+	{
+	    escreva ("Você teve um AUMENTO DE 10% :) \n", numero)
+	}
+	escreva("\nFAÇA BOM PROVEITO $$\n")
+	}
+}
+
+2.
+
+programa {
+	funcao inicio() {
+    real numero
+	escreva ("Insira um número abaixo ou acima de 0: \n")
+	leia (numero)
+	
+	se (numero <=0)
+	{
+	    escreva("este número é NEGATIVO \n", numero)
+	}
+	senao 
+	{
+	    escreva("o número é POSITIVO \n", numero)
+	}
+	}
+}
+
+
+3.
+
+programa {
+	funcao inicio() {
+			
+	escreva ("Campo Grande-MS com destino à Matinhos - PR, quanto eu vou gastar para ir com meu marido?\n")
+	escreva ("Tendo em vista que vamos em um FIAT UNO, e a gasolina tem custado R$ 5,00.. \n\n")
+	
+	real a, b, resultado
+	
+	escreva ("Digite quantos KM é a distancia percorrida de ida? ")
+	leia (a)
+	escreva ("a distância é: ", a, "KM")
+	
+	escreva ("\n Digite quantos KM o carro faz com um litro? ")
+	leia (b)
+	escreva("a autonomia do carro é de: ", b, "KM")
+	
+    resultado = a/b * 5
+	
+	escreva ("\n O custo estimado da viagem: ", resultado)
+	
+		}
+}
+
+
+4.
+
+programa {
+	funcao inicio() {
+		escreva ("\nTemos um caderno de desenho com tamanho de 30 cm. O professor de matemática pediu para Ellen dizer qual é a ÁREA DO RETANGULO desse caderno.\n")
+		
+		real altura, valor
+		escreva ("\nSe o tamanho é 30 cm, podemos dizer que esta é a ~ Base ~")
+		escreva ("\nInsira a altura do retangulo: ")
+		leia (altura)
+		
+		valor = 30 * altura
+		
+		escreva ("\n\nPortanto a área do retangulo é de : ", valor, " CM²")
+		
+	}
+}
+
+
+
+5.
+
+programa {
+	funcao inicio() {
+	    
+	    real salario, vendas, comissao, final
+		escreva ("Jorge tem um salario de R$ 1.100 e tem uma comissão de 4%.\n")
+		
+		escreva ("\nDigite o valor do salário no mês de setembro: $ ") 
+		leia (salario)
+		
+		escreva ("\nTeve como Vendas, um total de: ")
+		leia (vendas)
+		
+	    comissao = vendas * 0.04 
+	    
+	    escreva ("\nA comissão de Jorge é no valor de ", comissao, "$")
+	    
+	    final = comissao + salario
+	    
+	    escreva ("\n\nO valor do Salário FINAL de Jorge no mês é: ", final, "$")
+	    
+	    escreva ("\n\nATÉ BREVE")
+	}
+}
+
+
+
+6.
+
+programa {
+	funcao inicio() {
+		
+		real preco, novo, desconto
+		
+		escreva ("Insira o preço da cerveja: ", "$ ")
+		leia (preco)
+		
+		novo = preco - 0.10
+		
+		escreva("Agora sua cerveja custa: ", novo)
+	}
+}
+
+
+7.
+
+programa {
+	funcao inicio() {
+	    real frango, unidade
+	  	    
+		escreva ("TEC FRANGO\n\n")
+			
+		escreva ("Insira o número de frangos que possui? ", "unidades ")
+		leia (unidade)
+
+		frango = 7.5 * unidade
+		
+
+		escreva("\n\nA Tec Frango vai gastar na granja, um valor de: ", frango, "$ \n\n")
+
+		escreva("FIM")	
+	}
+}
+
+8.
+
+programa {
+	funcao inicio() {
+		escreva ("GostoSoft LANCHONETE\n")
+		
+		real sanduiches, q, p, h
+		
+		
+		escreva ("\nInsira a quantidade de sanduiches que deseja preparar:", " Unidades ")
+		leia (sanduiches)
+		
+		q = 0.10 * sanduiches // a partir de 10, temos 1 kg
+		p = 0.05 * sanduiches // a partir de 20, temos 1 kg
+		h = 0.10 * sanduiches // a partir de 10, temos 1 kg
+		
+		escreva("\nA quantidade em KG de ingredientes que será preciso, respectivamente é de:\n", q , " KG QUEIJO\n", p , " KG PRESUNTO\n", h , " KG HAMBURGUERES ","\n\nf i m  !")
+		leia (q, p, h)
+	}
+}
+
+o fim ficou na mesma linha porque precisa ser declarado no escopo, e se não tem como colocar nome em numero real, insiriu na mesma linha do problema
+
+9.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro camisetas, p, m, g, resultado
+		
+		escreva("Digite quantas camisetas você quer: \n")
+		leia (camisetas)
+	
+		escreva("Quantas são PEQUENA: \n")
+		leia (p)
+		escreva("Quantas são MEDIA: \n")
+	    	leia (m)
+		escreva("Quantas são GRANDE \n")
+		leia (g)
+		
+		resultado = (p *10) + (m * 12) + (g * 15)
+		
+		escreva ("O valor de sua compra tem o total de $ ", resultado)
+		leia (resultado)
+
+	}
+}
+
+
+10.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("Brechó\n\n")
+		
+		real custo, v1, v2
+		escreva("Quanto custou a peça de roupa que deseja vender? \n")
+		leia (custo)
+
+        v1 = (custo * 0.45) + custo
+        v2 = (custo * 0.30) + custo
+	
+		se(custo < 50)
+		{
+			escreva ("A peça de roupa será vendida a $ \n", v1)
+		}
+		senao se(custo > 50)
+		{
+			escreva ("Esta peça de roupa será vendida a $ \n", v2)
+		}
+		
+	}
+}
