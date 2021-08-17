@@ -1,0 +1,55 @@
+EXERCICIOS ENQUANTO (ESTRUTURA DE REPRETIÇÃO) aula 03/08
+
+1.
+
+programa {
+	funcao inicio() {
+		
+		inteiro numero, soma
+	
+		escreva ("Digite o número: \n")
+		leia(numero)
+	    
+	    soma = numero
+		enquanto (numero != 0)
+		{
+	    limpa ()
+	    escreva ("De novo, outro número: \n")
+	    leia (numero)
+	    
+	    soma = soma + numero
+	    
+	    }
+	    
+	    escreva ("\nEncerramos aqui .. até a próxima !\n")
+	    escreva ("\nA soma foi de: ", soma)
+	   
+	}
+}	
+
+
+2.
+
+programa {
+	funcao inicio() {
+		inteiro numero, contador =1, media, soma = 0 
+		
+		// soma = 0 devido a utilização que eu vou fazer dele, no caso somente para o LAÇO
+		// contador = 1 devido a partida que eu quero começar minha equaçao
+		// se eu não determino eles, o que a variavel vai fazer no decorrer do código, quando eu colocar no LAÇO pode ficar inválido, sem leitura/execução
+			
+		enquanto (contador <= 3) // <= é quantas vezes eu quero que o número do usuário seja digitado 
+		{
+		escreva ("Digite um numero: " )
+		leia (numero) // entrada do usuário
+		soma = soma + numero // toda entrada de usuário eu preciso somar estes números
+		
+		contador=contador+1 // incrementar ao contador +1. exemplo: se eu inseri 99 valores diferente, incrementando +1 eu chego no 100 ~ meu limite proposto no exercicio ~
+			
+		}
+		
+		media = soma/3
+		escreva ("A soma é: ", media)
+				
+	}
+}
