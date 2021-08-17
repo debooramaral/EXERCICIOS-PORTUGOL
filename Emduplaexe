@@ -1,0 +1,109 @@
+ATIVIDADE EM DUPLA
+
+tentativa pro Enilda - cheia de b.o
+
+programa {
+    funcao inicio() {
+        escreva (" Departamento de Educação Física\n\n ")
+        
+        inteiro contador = 0, matricula = 1, altura=100, mulheres, homens
+        cadeia sexo, f, m, fisico, a, b, c
+    
+        escreva ("Insira seus dados abaixo\n\n")
+
+        enquanto (contador <= 2) // looping será executado nesta condição
+        {
+            contador = contador + 1 // a cada um loop acrescenta, incrementa mais um
+            
+        escreva ("\nQual é a sua matricula: \n")
+        leia (matricula)
+         
+        escreva ("\nQual é o sexo?\n", "- F\n", "- M\n", "a resposta é: ")
+        leia (sexo)
+        
+        escreva ("\nSua altura: ")
+        leia (altura)
+        
+        se (sexo + altura >= 170)
+        {
+            
+        mulheres = contador + 1
+        
+        escreva ("A quantidade de alunos mulheres com altura a partir de 170 cm é de: ")    
+    
+        }
+        
+        limpa()
+        
+        senao se (sexo + fisico)
+        { 
+        
+        escreva ("\nEm qual condição física seu corpo se encontra, sendo \n", "A. BOM \nB. REGULAR \nC. RUIM\n", "a resposta é: ")
+        leia (fisico)
+            
+        homens = contador + 1
+        
+        fisico * 100 / homens
+        
+        escreva ("A % de alunos homens com condição física no status de BOM, é de: ")
+        }
+        }
+    }
+}
+
+tentativa 2 - professora deu "cola"
+
+programa {
+	funcao inicio() {
+		inteiro altura, status, contf170, conth, conthb, i 
+		cadeia sexo, matricula
+		real porc
+		
+		contf170 = 0 // partirá do zero a contagem
+		conth = 0 
+		conthb = 0 
+		i = 1
+		
+		enquanto (i <= 3)
+		{
+		
+		escreva ("Digite a matricula: \n")
+		leia (matricula)
+		
+		escreva ("Digite a altura (cm): \n")
+		leia (altura)
+		
+		escreva ("Digite o status físico (1-bom 2-regular 3-ruim): \n")
+		leia (status)
+		
+		escreva ("Digite o sexo (m, f): \n")
+		leia (sexo)
+		
+		
+		se (sexo = "f") e (altura > 170)
+	    {
+		    contf170 = contf170 + 1 // contador zerado, a cada entrada acrescenta/incrementa 1
+		}
+		
+		senao (sexo = "m")
+		{
+		    conth = conth + 1
+		}
+		
+		senao se (sexo = "m") e (status = 1)
+		{
+		    conthb = conthb + 1
+		}
+		
+		i = i + 1 // 
+		
+		}
+		
+		 porc = conthb / conth * 100
+		 
+		 escreva (" A quantidade de alunas do sexo feminino com altura a partir de 170 cm é de: \n", contf170)
+		 escreva ("A porcentagem de alunos do sexo masculino e com status fisico bom, é de: \n", porc)
+		
+		}
+	}
+}
