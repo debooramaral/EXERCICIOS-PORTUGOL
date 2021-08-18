@@ -1,0 +1,115 @@
+foi esquecido do == para cadeia sexo
+foi deixado senao se no lugar de se, o senão na maioria das vezes é final da expressão
+foi deixado de lado o parenteses na conta final, após o enquanto
+os simbolos tem ordem na hora de calcular.. por exemplo > < sempre vem primeiro, quanto tem =
+matricula é inteiro, porque é número
+
+correto com erro no calculo
+
+programa {
+	funcao inicio() {
+		inteiro altura, status, contf170=0, conth=0, conthb=0, cont = 1, matricula 
+		cadeia sexo
+		real porc
+		
+				
+		enquanto (cont <= 2)
+		{
+		
+		escreva ("Digite a matricula: \n")
+		leia (matricula)
+		
+		escreva ("Digite a altura (cm): \n")
+		leia (altura)
+		
+		escreva ("Digite o status físico (1-bom 2-regular 3-ruim): \n")
+		leia (status)
+		
+		escreva ("Digite o sexo (m, f): \n")
+		leia (sexo)
+		
+				
+		se (sexo == "f" e altura >= 170)
+	    	{
+		    contf170 = contf170 + 1 // contador zerado, a cada entrada acrescenta/incrementa 1
+		}
+		
+		se (sexo == "m")
+		{
+		    conth = conth + 1
+		}
+		
+		senao se (sexo == "m" e status == 1)
+		{
+		    conthb +=1 
+		}
+		 
+		 cont = cont + 1
+		
+		} 
+		
+		
+
+		  limpa ()
+		 
+		 escreva ("\nA quantidade de alunas do sexo feminino com altura a partir de 170 cm é de: \n", contf170)
+		 escreva ("\nA porcentagem de alunos do sexo masculino e com status fisico bom, é de: \n", ((conthb*100)/conth))
+		
+		}
+	}
+
+
+
+
+####################Versão Modificada Tati###########################
+
+
+programa {
+	funcao inicio() {
+		inteiro altura, status, contf170=0, conth=0, conthb=0, cont = 1 
+		cadeia sexo, matricula 
+		real porc
+		
+				
+		enquanto (cont <= 2)
+		{
+		
+		escreva ("Digite a matricula: \n")
+		leia (matricula)
+		
+		escreva ("Digite a altura (cm): \n")
+		leia (altura)
+		
+		escreva ("Digite o status físico (1-bom 2-regular 3-ruim): \n")
+		leia (status)
+		
+		escreva ("Digite o sexo (m, f): \n")
+		leia (sexo)
+		
+				
+		se (sexo == "f" e altura >= 170)
+	    	{
+		    contf170 = contf170 + 1 // contador zerado, a cada entrada acrescenta/incrementa 1
+		}
+		
+		senao se (sexo == "m" e status == 1)
+		{
+		    conth = conth + 1
+		    conthb = conthb+1
+		    
+		}
+		
+				 
+		 cont = cont + 1
+		
+		} 
+		
+		porc=((conthb*100)/conth)
+
+		  limpa ()
+		 
+		 escreva ("\nA quantidade de alunas do sexo feminino com altura a partir de 170 cm é de: \n", contf170)
+		 escreva ("\nA porcentagem de alunos do sexo masculino e com status fisico bom, é de: \n", porc)
+		
+		}
+	}
