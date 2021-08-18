@@ -1,6 +1,6 @@
 ATIVIDADE EM DUPLA
 
-tentativa pro Enilda - cheia de b.o
+tentativa prof Enilda 
 
 programa {
     funcao inicio() {
@@ -51,7 +51,7 @@ programa {
     }
 }
 
-tentativa 2 - professora deu "cola"
+tentativa 2 - professora ajudou com descrição do código
 
 programa {
 	funcao inicio() {
@@ -80,12 +80,12 @@ programa {
 		leia (sexo)
 		
 		
-		se (sexo = "f") e (altura > 170)
+		se (sexo == "f") e (altura > 170)
 	    {
 		    contf170 = contf170 + 1 // contador zerado, a cada entrada acrescenta/incrementa 1
 		}
 		
-		senao (sexo = "m")
+		senao (sexo == "m")
 		{
 		    conth = conth + 1
 		}
