@@ -1,0 +1,105 @@
+Atividade enquanto 2 
+
+1. ajuda da professora
+
+encontrar o 5º  entre 1000 até 1999 = 1050
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 0, numero = 1000
+	
+
+		enquanto (contador < 5 ) 
+		{
+		    
+		    numero++ 
+	
+		
+		se (numero % 11== 5) // modulo é representado por %, porque possui resto que é ==
+		{
+		    
+		    contador++
+		}
+	}
+		escreva ("O numero é : ", numero)
+		
+            
+		}
+
+}
+
+
+2.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x=0, num // o contador é o tringular, ou o que vai encontrar
+
+		escreva("Digite um número para saber se é triangular: \n")
+		leia (num)
+		
+		enquanto (x*(x+1)*(x+2) <= num) { // triangular: encontra sempre o maior/proxima sequencia que confirma 
+
+			se (x*(x+1)*(x+2) == num) { // a entrada do usuário for igual a uma sequencia de numeros consecutivos (triangular)
+				
+				limpa () // a informação do usuário e em seguida resposta
+				
+				escreva (x,"*",x+1,"*",x+2," = ", num , " \nEste número é TRIANGULAR\n") // explicação ao usuário
+				
+				num += 1
+				
+				pare
+				
+				}
+				
+			senao {		
+
+				x += 1
+
+				se (x*(x+1)*(x+2) > num) {
+					 
+				escreva ("Este número não é TRIANGULAR! \n")
+				
+				}
+				
+			}
+			
+		}
+		
+	}
+}
+
+
+
+
+3. 
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num=1, cont=0 // cont para as entradas entre 100 a 200; e num = 1, porque o 0 para a execução
+
+		
+		enquanto (num != 0) // condição de parada, looping executa
+		{
+			escreva ("\nDigite um número a partir de 100: \n")
+			leia (num)
+			limpa ()
+			
+			se (num >= 100 e num <= 200)
+				{
+					cont = cont + 1
+				}
+
+			escreva (" Você digitou ", cont+ " números entre 100 a 200\n")
+		}
+	}
+}
