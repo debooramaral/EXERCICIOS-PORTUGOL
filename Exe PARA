@@ -1,0 +1,115 @@
+Exercicio PARA
+
+1.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num, resultado
+
+		escreva ("Digite número \n")
+		leia (num)
+		limpa ()
+
+		para (num = 1; num <= 10; num ++) {
+
+		num = num + 0 
+
+		escreva ("\nTemos ", num)
+			
+		}
+	}
+}
+
+
+2. 
+
+programa {
+	funcao inicio() {
+		inteiro num, cont
+		
+		escreva ("Digite números acima de 10: \n")
+		leia (num)
+
+		enquanto (num < 10){
+		    
+		    escreva ("ERRO: número inválido. Digite um número maior que 10\n")
+		    leia (num)
+		    
+		}
+		
+		para (cont = 10; cont <= num; cont ++) {
+
+		escreva (cont, " º temos\n")
+			
+		}
+		
+		}
+	}
+
+
+3.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, fat=1, contador, resultado = 1
+		
+		escreva("Digite um número: \n")
+		leia (n)
+		
+        para (contador=1 ; contador <= n; contador ++){
+            
+        
+        resultado = resultado * contador
+            
+        }
+    
+        
+        escreva(resultado)
+    
+	}
+}
+
+
+
+4.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, contador = 0, i = 1
+
+		
+		escreva("Digite um numero inteiro: \n")
+		leia (n)
+		
+		para (i; i <= n; i ++){ 
+
+        se (n % i == 0) 
+        {
+
+        contador ++
+        
+        }		
+		}
+        se (contador == 2) 
+        {
+            escreva (n, " é um número PRIMO!", "\n")
+        }
+        
+        senao 
+        {
+            escreva (n, " NÃO É UM NÚMERO PRIMO.", "\n")
+        }
+        
+		
+		
+	}
+}
