@@ -1,0 +1,69 @@
+1
+
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome [10]
+		inteiro idade [10]
+		real media [10]
+
+		nome [0] = "Tatiane"
+		nome [1] = "Bruno"  
+		nome [2] = "Bruna"
+		nome [3] = "Matheus"
+		nome [4] = "Tiago"
+		nome [5] = "Gabriel"  
+		nome [6] = "Levi"
+		nome [7] = "Kauane"
+		nome [8] = "Odair"  
+		nome [9] = "Vinicius"
+
+		escreva (nome [2])
+		    
+		
+		
+	}
+}
+
+
+2
+
+
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome [10] = {"Tatiane","Bruno","Bruna","Matheus","Tiago","Gabriel", "Levi","Kauane", "Odair", "Vinicius"}
+		
+		para ( inteiro cont = 0; cont<= 9; cont++){
+			escreva (nome[cont]+"\n")
+		}
+	}
+}
+
+
+3
+
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome [5]
+
+		para ( inteiro i = 0; i<= 4; i++){
+			escreva ("Digite a posição "+i+": ")
+			leia (nome[i])
+			limpa()
+		}
+	
+
+		para ( inteiro i = 0; i<= 4; i++){
+			escreva(i+ ": "+nome[i]+ " | ")
+			
+		}
+	}
+}
