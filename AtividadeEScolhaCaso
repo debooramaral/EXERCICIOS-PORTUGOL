@@ -1,0 +1,82 @@
+ATIVIDADE ESCOLHA CASO
+
+1.
+
+	funcao inicio()
+	{
+		inteiro num1, num2, op, soma, subtracao, divisao, multiplicacao
+	
+	
+		escreva("Digite um número: \n")
+		leia (num1)
+		
+		escreva ("Escolha uma operação matemática: \n 1. Soma \n 2. Subtração \n 3. Divisão \n 4. Multiplicação\n\n")
+		leia (op)
+
+		escreva ("\nDigite outro número: \n")
+		leia (num2)
+
+		limpa ()
+
+		escolha (op)
+		{
+			caso 1: escreva ("Temos ", num1 , " + " , num2 , " = ", soma = num1+num2 )
+			
+			pare
+ 
+			caso 2: escreva ("Temos ", num1 , " - " , num2 , " = ", subtracao = num1-num2 )
+			pare
+
+			caso 3: escreva (" Temos ", num1 , " / " , num2 , " = ", divisao = num1/num2 ) 
+			pare
+ 
+			caso 4: escreva ("Temos ", num1 , " * " , num2 , " = ", multiplicacao = num1*num2 )
+			pare
+
+			caso contrario: escreva ("Operação Incorreta")
+		}
+
+		
+		
+	}
+}
+
+2.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro placa, opcao
+		
+	
+		escreva("Digite o último número da Placa do seu Carro: \n")
+		leia (placa)
+		
+		escreva ("Escolha uma Opção: \n 1. 0-1\n 2. 2-3\n 3. 4-5\n 4. 6-7\n 5. 8-9 \n\n")
+		leia (opcao)
+
+		limpa ()
+
+		escolha (opcao)
+		{
+			caso 1: escreva ("Você escolheu ", 1 , " NÃO CIRCULE às 2ª FEIRA\n")
+			pare
+ 
+			caso 2: escreva ("Você escolheu ", 2 , " NÃO CIRCULE às 3ª FEIRA\n")
+			pare
+
+			caso 3: escreva ("Você escolheu ", 3 , " NÃO CIRCULE às 4ª FEIRA\n")
+			pare
+ 
+			caso 4: escreva ("Você escolheu ", 4 , " NÃO CIRCULE às 5ª FEIRA\n")
+			pare
+
+			caso 5: escreva ("Você escolheu ", 5 , " NÃO CIRCULE às 6ª FEIRA\n")
+			pare
+
+			caso contrario: escreva ("CIRCULE NORMAL\n")
+		}
+	}
+}
