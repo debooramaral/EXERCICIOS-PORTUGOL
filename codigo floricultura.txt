@@ -1,0 +1,82 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("F L O R I C U L T U R A\n")
+		
+		cadeia cadCli, detalhesCom, nome, rg, telefone, endereco, data
+		inteiro respostaCad, opcao
+
+		respostaCad = 0
+		opcao = 0
+	
+		escreva ("\nPossui cadastro na loja?\n") 
+		escreva ("1. Sim\n", "2. Não\n")
+		escreva ("\nDigite o número e responda: \n")
+		leia (respostaCad)
+
+		enquanto (respostaCad > 0) 
+		{
+
+		se (respostaCad > 1)
+		{
+			limpa ()
+			
+			escreva("F L O R I C U L T U R A\n")
+			
+			escreva ("\nVamos fazer um cadastro de cliente?\n")
+			
+			escreva ("\nDigite seus dados para o CADASTRO DE CLIENTE\n")
+			escreva ("Nome: \n") 
+			leia (nome)
+			escreva ("RG: \n") 
+			leia (rg)
+			escreva ("Telefone: \n") 
+			leia (telefone)
+			escreva ("Endereço: \n")
+            leia (endereco)
+            
+            escreva ("\nQue dia esta fazendo esta compra? \n")
+            leia (data)
+            
+		}
+		senao
+		{
+			limpa ()
+			
+			escreva("F L O R I C U L T U R A\n")
+			
+			escreva ("\nQual é o seu Pedido na loja?\n")
+		}
+		
+		pare
+		
+		}
+        
+        escreva ("\nEscolha o PRODUTO desejado:", " Entre 1 a 5, temos: Flores, Plantas, Vaso, Terra / Adubo e Acessórios. \n")
+        leia (opcao)
+        
+            escolha (opcao)
+        {
+            caso 1: escreva ("\nFlores: rosa, margarida, tulipa, girassol \n", "PREÇO $ 15,00 média por muda\n", "ESTOQUE: 5 cada\n")
+            pare
+            caso 2: escreva ("\nPlantas: Ipês, Laranja, Limão, Goiaba, Boldo, Espada de São Jorge \n", "PREÇO $ 20,00 média por muda\n", "ESTOQUE: 10 cada\n")
+            pare
+            caso 3: escreva ("\nVaso: redondo, quadrado, pequeno, médio e grande\n", "PREÇO $ 5,00 à 30,00\n", "ESTOQUE: 50 cada\n")
+            pare
+            caso 4: escreva ("\nTerra ou Adubo\n", "PREÇO $ 10,00 a cada 1 kg\n", "ESTOQUE: 1 tonelada\n")
+            pare
+            caso 5: escreva ("\nAcessórios", "PREÇO $ a partir de $ 5,00\n", "ESTOQUE: 100 variedades\n")
+            pare
+            caso contrario: escreva ("\nEncerramos aqui, ligue pra gente!\n")
+        }
+        
+        limpa ()
+        
+        escreva("F L O R I C U L T U R A\n")
+        
+        escreva ("\nDetalhes da sua Compra na nossa loja de Floricultura, foi de: \n")
+
+	}
+}
