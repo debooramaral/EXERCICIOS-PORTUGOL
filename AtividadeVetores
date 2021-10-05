@@ -1,0 +1,89 @@
+Atividades vetores
+
+1. 
+
+programa {
+	funcao inicio() {
+		
+		inteiro soma = 0, i = 0, num [5]
+		
+		para (i = 0; i <= 4; i++){
+
+		escreva ("Digite um número " +i+ " : ")
+		leia (num[i])
+		
+		}
+
+		para (i = 0; i <= 4; i++){
+		
+		escreva (num[i]+ "\n")
+		
+		}
+
+		soma = num [4] + num [3] + num [2] + num [1] + num [0]
+		
+		limpa ()
+		escreva ("A soma destes números é de: ", soma, "\n")
+	}
+}
+
+2.
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+		cadeia nome [5] 
+
+		para (inteiro i = 0; i <= 4; i++){
+
+			escreva("Digite um nome - ")
+			leia (nome[i])
+			
+		}
+		
+		para (inteiro i = 4; i >= 0; i--){
+		    
+		    
+		    escreva (nome[i], "\n")
+		}
+
+	}
+}
+
+3.
+
+programa {
+	funcao inicio() {
+		
+		cadeia par[5], impar[5]
+		
+		para (inteiro i = 0; i <= 4; i++){
+		
+		escreva ("Digite números par: ")
+		leia (par[i])
+		
+		}
+		para (inteiro i = 0; i <= 4; i++){
+		
+		escreva ("Digite agora números impares: ")
+		leia (impar[i])
+		
+		}
+		para (inteiro i = 0; i <= 4; i++){ 
+		
+		limpa ()
+		escreva ("números PARES:", par[i]+ " \n") 
+		
+		}
+		para (inteiro i = 0; i <= 4; i++){ 
+		
+		limpa ()
+		escreva ("números IMPARES:", impar[i]+ " \n") 
+		
+		}
+		
+	}
+}
