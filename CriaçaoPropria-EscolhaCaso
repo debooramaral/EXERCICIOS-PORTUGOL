@@ -1,0 +1,119 @@
+atividade 14/09 
+
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("F L O R I C U L T U R A\n")
+		
+		cadeia nome = "", rg = "", telefone = "", endereco = "", data = "", produto = "", compra = ""
+		inteiro opcao, respostaMenu
+
+		opcao = 1
+
+    enquanto (opcao != 0){
+		
+		escreva ("\nMENU\n") 
+		escreva ("1. Cadastro Cliente\n", "2. Produtos\n", "3. Comprar\n", "4. Detalhes da Compra\n", "0. Sair\n")
+		escreva ("\nDigite o número e responda: \n")
+		leia (opcao)
+
+		escolha (opcao) 
+		{
+
+		caso 1: 
+		
+			limpa ()
+			
+			escreva("F L O R I C U L T U R A\n")
+			
+			escreva ("\nVamos fazer um cadastro de cliente?\n")
+			
+			escreva ("\nDigite seus dados para o CADASTRO DE CLIENTE\n")
+			escreva ("Nome: \n") 
+			leia (nome)
+			escreva ("RG: \n") 
+			leia (rg)
+			escreva ("Telefone: \n") 
+			leia (telefone)
+			escreva ("Endereço: \n")
+           	leia (endereco)
+            
+            escreva ("\nQue dia esta fazendo esta compra? \n")
+           	leia (data)
+
+           pare
+
+		 caso 2:
+		
+			limpa ()
+			
+			escreva("F L O R I C U L T U R A\n")
+			
+			escreva ("\nPRODUTOS\n")
+			escreva ("\n1. Flores: rosa, margarida, tulipa, girassol \n", "PREÇO $ 15,00 média por muda\n", "ESTOQUE: 5 cada\n")
+			escreva ("\n2. Plantas: Ipês, Laranja, Limão, Goiaba, Boldo, Espada de São Jorge \n", "PREÇO $ 20,00 média por muda\n", "ESTOQUE: 10 cada\n")
+			escreva ("\n3. Vaso: redondo, quadrado, pequeno, médio e grande\n", "PREÇO $ 5,00 à 30,00\n", "ESTOQUE: 50 cada\n")
+           	escreva ("\n4. Terra ou Adubo\n", "PREÇO $ 10,00 a cada 1 kg\n", "ESTOQUE: 1 tonelada\n")
+			escreva ("\n5. Acessórios", "PREÇO $ a partir de $ 5,00\n", "ESTOQUE: 100 variedades\n")
+
+			escreva ("\nDigite o número do produto que deseja? \n")
+			leia (opcao)
+			
+			escolha(opcao) 
+			{
+			caso 1:
+			    produto = "1. Flores: rosa, margarida, tulipa, girassol \nPREÇO $ 15,00 média por muda\n ESTOQUE: 5 cada\n"
+			    pare
+			caso 2:
+			    produto = "2. Plantas: Ipês, Laranja, Limão, Goiaba, Boldo, Espada de São Jorge \nPREÇO $ 20,00 média por muda\nESTOQUE: 10 cada\n"
+			    pare
+			caso 3:
+			    produto = "3. Vaso: redondo, quadrado, pequeno, médio e grande\nPREÇO $ 5,00 à 30,00\nESTOQUE: 50 cada\n"
+			    pare
+			caso 4: 
+			    produto = "4. Terra ou Adubo\nPREÇO $ 10,00 a cada 1 kg\nESTOQUE: 1 tonelada\n"
+			    pare
+			caso 5:
+			    produto = "5. Acessórios\nPREÇO $ a partir de $ 5,00\nESTOQUE: 100 variedades\n"
+			    pare
+			}
+		    
+		    pare
+
+		caso 3:
+		
+			limpa ()
+			
+			escreva("F L O R I C U L T U R A\n")
+
+			escreva ("1. Flores\n", "2. Plantas \n", "3. Vaso\n", "4. Terra ou Adubo\n", "5. Acessórios\n")
+			escreva ("O que deseja comprar? \n")
+			leia (compra)
+		    
+		    pare
+		
+		caso 4: 
+		
+		limpa ()
+		
+		escreva ("\n~ Detalhes da Compra ~\n")
+	    escreva (nome, "\n")
+	    escreva (data, "\n")
+	    escreva (produto, "\n")
+	
+		
+		pare
+		
+		caso 0: 
+		pare
+
+		}
+		
+        }
+        
+        limpa ()
+
+	}
+}  calcular a compra do cliente
