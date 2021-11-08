@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero [4][4]
+
+		escreva("Digite 8 números: \n")
+		leia (numero[4][4])
+		limpa ()
+
+		
+		para (inteiro l=0; l<4; l++){
+			para (inteiro c=0; c<4; c++){
+
+				escreva (numero [l][c], ",")
+			}
+
+			escreva ("\n")
+		}
+	}
+}
